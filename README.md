@@ -17,5 +17,3 @@ A collection of beginner-friendly, interactive JavaScript projects to strengthen
 | 7  | GitHub Card 🎴                     | Fetch and show GitHub user data |
 
 ---
-
-## 📁 Folder Structure
