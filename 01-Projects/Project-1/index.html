@@ -1,0 +1,108 @@
+<!-- Color Changer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Changer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #d9d9d9;
+      color: #222;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background-color: #4a4e4e;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .home {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border: 2px solid #ffffff40;
+      border-radius: 6px;
+      background-color: #4a4e4e;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-block;
+    }
+
+    .home:hover {
+      background-color: #ffffff;
+      color: #4a4e4e;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      width: 18vw;
+      height: 18vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 120px;
+      min-height: 120px;
+      max-width: 200px;
+      max-height: 200px;
+      background-color: white;
+      border: 2px solid #333;
+      border-radius: 10px;
+      box-shadow: 4px 2px 8px #222222;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 6px 5px 10px #212121;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+      <a class="home" href="\01-Projects\Home">HOME</a>
+  </header>
+
+  <p>Color Scheme Switcher</p>
+
+  <div class="container">
+    <div class="box" ></div>
+    <div class="box" ></div>
+    <div class="box" ></div>
+    <div class="box" ></div>
+    <div class="box" ></div>
+  </div>
+
+  <p>Try clicking on one of the colors above to change the background color of this page!</p>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Number Guessing Game</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                background-color: #d9d9d9;
+                color: #222;
+                text-align: center;
+                padding-bottom: 40px;
+            }
+
+            header {
+                background-color: #4a4e4e;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 40px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .home {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 8px 16px;
+                border: 2px solid #ffffff40;
+                border-radius: 6px;
+                background-color: #4a4e4e;
+                transition: background-color 0.3s, color 0.3s;
+                display: inline-block;
+            }
+
+            .home:hover {
+                background-color: #ffffff;
+                color: #4a4e4e;
+            }
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            form {
+                background-color: white;
+                padding: 30px;
+                max-width: 400px;
+                height: 250px;
+                margin: 0 auto 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            form h1 {
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                font-size: 16px;
+                width: 70%;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #333;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #555;
+            }
+
+            .preGuess,
+            .guessRemaining,.bigSmall {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .result {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="home" href="/01-Projects/Home">HOME</a>
+        </header>
+
+        <h2>Number Guessing Game</h2>
+        <p>
+            Try and guess a random number between
+            <strong>1 and 100</strong>.<br />
+            You have <strong>10</strong> attempts to guess the right number.
+        </p>
+
+        <form>
+            <label for="inputBox"><h1>Guess A Number</h1></label>
+            <input id="inputBox" type="text" placeholder="Enter your guess" />
+            <br />
+            <button type="submit">Submit Guess</button>
+            <h3 class="result">Result here</h3>
+        </form>
+        <div class="history">
+            <div class="preGuess">Previous guesses: None</div>
+            <div class="guessesRemaining">Guesses remaining: 10</div>
+            <div class="bigSmall">Hint: None</div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
