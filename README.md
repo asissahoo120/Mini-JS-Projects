@@ -15,5 +15,6 @@ A collection of beginner-friendly, interactive JavaScript projects to strengthen
 | 5  | Random Background Color 🏳️‍🌈       | Change background to a random color in every second|
 | 6  | Keyboard Checker ⌨️               | Display which key is pressed |
 | 7  | GitHub Card 🎴                     | Fetch and show GitHub user data |
+| 8  | Random Password Generator                    | Generates a random passowrd |
 
 ---
